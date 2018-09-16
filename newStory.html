@@ -1,0 +1,182 @@
+<div id="articleType">New</div>
+	<div id="PublishSetting">
+				<div class="clickButton">Publish<i class="fas fa-angle-down"></i></div>
+				<div class="clickTarget" id="publishOrDraft">
+					<p>Ready to publish your post?</p>
+					<hr>
+					<ul>
+						<li>
+							<div class="radioInput">
+								<input type="radio" name="now" checked>
+								<label for="now"></label>
+								<div class="optionDetail">
+									<div  class="optionTitle">Set it live now</div>
+									<div class="optionNote">Publish this post immediately</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="radioInput">
+								<input type="radio" name="later">
+								<label for="now"></label>
+								<div class="optionDetail">
+									<div class="optionTitle">Schedule it for later</div>
+									<div>
+										<span class="dateOption">
+											<input type="date" name="" value="1995-06-13">
+											<i>
+											<span class="fas fa-calendar-alt"></span>
+											</i>
+										</span>
+										<span class="dateOption">
+											<input type="time" name="" value="05:27">
+											<i>(UTC)</i>
+										</span>
+									</div>
+									<div class="optionNote">Set automatic future publish date</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<hr>
+					<div id="stepChoice">
+						<button id="cancelChoice">Cancel</button>
+						<button id="publishSchedule">Publish</button>
+					</div>
+				</div>
+				<div id="settingIcon"><i class="fas fa-cogs"></i></div>
+	</div>
+	<main id="storiesMain">
+		<section id="editArea">
+			<div id="storyTitle" contenteditable="true">(Untitled)</div>
+			<div id="storyContent" contenteditable="true">Begin writing your story...</div>
+		</section>
+		<aside id="postSettings">
+			<header>
+				<span>Post Settings</span>
+				<i class="fas fa-times"></i>
+			</header>
+			<form id="uploadImg">
+				<input type="file" name="imgFile" id="chooseImg">
+				<label>Upload post imgae</label>
+				<i class="fas fa-camera"></i>
+				<i class="fas fa-trash-alt"></i>
+			</form>
+			<div id="postURL">
+				<div class="settingOption">Post URL</div>
+				<form>
+					<label><i class="fas fa-link"></i></label>
+					<input type="text" name="">
+				</form>
+				<div id="webAddress">www.traveler-tale.com/</div>
+			</div>
+			<div id="PublishDate">
+				<div class="settingOption">Publish Date</div>
+				<div>
+					<span class="timeOption">
+						<input type="date" name="" value="1995-06-13">
+						<i>
+						<span class="fas fa-calendar-alt"></span>
+						</i>
+					</span>
+					<span class="timeOption">
+						<input type="time" name="" value="05:27">
+						<i>(UTC)</i>
+					</span>
+				</div>
+			</div>
+			<div id="tagsSetting">
+				<div class="settingOption">Tags</div>
+				<form>
+					<input type="text" name="">
+				</form>
+			</div>
+			<div id="excerpt">
+				<div class="settingOption">Excerpt</div>
+				<form>
+					<textarea></textarea>
+				</form>
+			</div>
+			<div id="authorSearch">
+				<div class="settingOption">Authors</div>
+				<form>
+					<input type="text" name="">
+				</form>
+			</div>
+			<ul id="moreSettings">
+				<li>
+					<div>
+						<div class="extraTitle">Meta Data</div>
+						<div class="extraInfor">Extra content for search engines</div>
+					</div>
+					<div><i class="fas fa-angle-right"></i></div>
+				</li>
+				<li>
+					<div>
+						<div class="extraTitle">Meta Data</div>
+						<div class="extraInfor">Extra content for search engines</div>
+					</div>
+					<div><i class="fas fa-angle-right"></i></div>
+				</li>
+				<li>
+					<div>
+						<div class="extraTitle">Meta Data</div>
+						<div class="extraInfor">Extra content for search engines</div>
+					</div>
+					<div><i class="fas fa-angle-right"></i></div>
+				</li>
+				<li>
+					<div>
+						<div class="extraTitle">Meta Data</div>
+						<div class="extraInfor">Extra content for search engines</div>
+					</div>
+					<div><i class="fas fa-angle-right"></i></div>
+				</li>
+			</ul>
+			<div id="checkboxOption">
+				<form>
+					<div>
+						<input type="checkbox" name="">
+						<span class="checkbox">
+							<span class="checkboxDec">
+								<i class="fas fa-check"></i>
+							</span>
+							<span>Turn this post into a page</span>	
+						</span>
+					</div>
+					<div>
+						<input type="checkbox" name="">
+						<span class="checkbox">
+							<span class="checkboxDec">
+								<i class="fas fa-check"></i>
+							</span>
+							<span>Feature this post</span>
+						</span>
+						
+					</div>
+				</form>
+			</div>
+		</aside>
+	</main>
+	<div id="functionBar">
+		<ul>
+			<li class="function"><i class="fas fa-bold"></i></li>
+			<li class="function"><i class="fas fa-italic"></i></li>
+			<li class="function"><i class="fas fa-heading"></i></li>
+			<hr>
+			<li class="function"><i class="fas fa-quote-left"></i></li>
+			<li class="function"><i class="fas fa-align-justify"></i></li>
+			<li class="function"><i class="fas fa-align-right"></i></li>
+			<hr>
+			<li class="function"><i class="fas fa-link"></i></li>
+			<li class="function"><i class="fas fa-image"></i></li>
+			<li class="function"><i class="fas fa-camera"></i></li>
+			<hr>
+			<li class="function"><i class="far fa-eye"></i></li>
+			<li class="function"><i class="fas fa-book"></i></li>
+			<hr>
+			<li class="function"><i class="fas fa-language"></i></li>
+			<li class="function"><i class="fas fa-h-square"></i></li>
+			<li class="function"><i class="fas fa-question-circle"></i></li>
+		</ul>
+	</div>

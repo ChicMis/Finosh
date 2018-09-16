@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content - traveler tale</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/adminIndex.css">
+</head>
+<body>
+	<nav id="navOne">
+		<header>
+			<div id="personBox"  class="clickButton">
+				<div id="person">
+					<div id="personImg">
+						<img src="./img/world.png">
+					</div>
+					<div id="personInfor">
+						<div id="webName">traveler tale</div>
+						<div id="personName">Melony</div>
+					</div>
+				</div>
+				<div id="moreAbout">
+					<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535779705855" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1914" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><defs><style type="text/css"></style></defs><path d="M512 689.2c-7.2 0-14.3-2.7-19.8-8.2l-224-224c-10.9-10.9-10.9-28.7 0-39.6s28.7-10.9 39.6 0L512 621.6l204.2-204.2c10.9-10.9 28.7-10.9 39.6 0 10.9 10.9 10.9 28.7 0 39.6l-224 224c-5.5 5.5-12.6 8.2-19.8 8.2z" p-id="1915" fill="#bbbbbb"></path></svg>
+				</div>
+			</div>
+			<div id="moreInfor" class="clickTarget">
+				<ul>
+					<li class="aboutGhost">
+						<i class="fas fa-shopping-basket"></i>
+						<span>About Ghost</span>
+					</li>
+					<hr>
+					<li class="aboutGhost">
+						<i class="fas fa-user-circle"></i>
+						<span>Your Profile</span>
+					</li>
+					<li class="aboutGhos	t">
+						<i class="fas fa-ambulance"></i>
+						<span>Support Center</span>
+					</li>
+					<li class="aboutGhost">
+						<i class="fab fa-twitter"></i>
+						<span>Twiter</span>
+					</li>
+					<li class="aboutGhost">
+						<i class="fas fa-book-open"></i>
+						<span>How to use Ghost</span>
+					</li>
+					<hr>
+					<li class="aboutGhost">
+						<i class="fas fa-sign-out-alt"></i>
+						<span>Sign Out</span>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<aside id="searchBox">
+			<div id="inputBox">
+				<input type="text" name="" placeholder="Search" id="searchKeyWords">
+				<div id="searchLogo">
+					<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535780932289" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2723" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"><defs><style type="text/css"></style></defs><path d="M625.81640288 37.76498797c-199.06014629 0-360.41860914 161.35846283-360.41860914 360.41860915 0 83.34680336 28.33554196 160.05431657 75.75904318 221.11207435L40.49183929 919.9606691c-3.67532134 3.67532134-3.67532134 9.72181774 0 13.39713908l50.15035253 50.15035253c3.67532134 3.67532134 9.72181774 3.67532134 13.39713908 0l300.66499763-300.66499763C465.76208633 730.26666429 542.46959952 758.60220626 625.81640288 758.60220626c199.06014629 0 360.41860914-161.35846283 360.41860915-360.41860914S824.87654918 37.76498797 625.81640288 37.76498797z m191.11670985 551.53531899C765.95284894 640.3991295 698.01868346 668.49755395 625.81640288 668.49755395s-140.13644605-28.09842446-191.11670984-79.19724699C383.6008705 538.32004317 355.50244605 470.3858777 355.50244605 398.18359712s28.09842446-140.13644605 79.19724699-191.11670985c50.9802638-51.09882254 118.91442927-79.19724701 191.11670984-79.19724701s140.13644605 28.09842446 191.11670985 79.19724701c51.09882254 50.9802638 79.19724701 118.91442927 79.19724701 191.11670985s-28.09842446 140.13644605-79.19724701 191.11670984z" p-id="2724" fill="#bfbfbf"></path></svg>
+				</div>
+			</div>
+			<div id="searchResult">
+				<div id="tipWords">no result found</div>
+				<ul id="results">
+					
+				</ul>
+			</div>
+		</aside>
+		<section>
+			<ul class="option">
+				<li class="normal" id="newStory">
+					<span class="optionIcon"><i class="fas fa-pencil-alt"></i></span>
+					<span class="editName">New Story</span>
+				</li>
+				<li class="selected">
+					<span class="optionIcon"><i class="fas fa-book-open"></i></span>
+					<span class="editName">Stories</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-users"></i></span>
+					<span class="editName">Team</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-envelope"></i></span>
+					<span class="editName">Subscribers</span>
+				</li>
+				<div id="settings">SETTINGS</div>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-cog"></i></span>
+					<span class="editName">General</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-crop"></i></span>
+					<span class="editName">Design</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-tags"></i></span>
+					<span class="editName">Tags</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-code"></i></span>
+					<span class="editName">Code injection</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fab fa-app-store-ios"></i></span>
+					<span class="editName">APP</span>
+				</li>
+				<li class="normal">
+					<span class="optionIcon"><i class="fas fa-vials"></i></span>
+					<span class="editName">Labs</span>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<a href="./index.html">
+				<span>View site</span>
+				<span><i class="fas fa-share-square"></i></span>
+			</a>
+		</footer>
+	</nav>
+	<div id="navShowButton"></div>
+	<nav id="navTwo">
+		<ul>
+			<li class="normal" id="newStory2">
+				<span class="optionIcon"><i class="fas fa-pencil-alt"></i></span>
+				<span class="editName">New Story</span>
+			</li>
+			<li class="selected">
+				<span class="optionIcon"><i class="fas fa-book-open"></i></span>
+				<span class="editName">Stories</span>
+			</li>
+			<li class="normal">
+				<span class="optionIcon"><i class="fas fa-users"></i></span>
+				<span class="editName">Team</span>
+			</li>
+			<li class="normal">
+				<span class="optionIcon"><i class="fas fa-envelope"></i></span>
+				<span class="editName">Subscribers</span>
+			</li>
+		</ul>
+	</nav>
+	<div id="loadArea">
+		<main id="indexMain">
+			<div id="yourStory">
+				<header>
+					<h2>Your Stories</h2>
+					<button>New Story</button>
+				</header>
+				<div id="sortOption">
+					<ul id="generalOption">
+						<li class="allOption">
+							<div class="clickButton sortCriteria">
+								<span>All posts</span>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<ul id="posts" class="detailOption clickTarget">
+								<li class="selected">All posts</li>
+								<li class="normal">Draft posts</li>
+								<li class="normal">Published posts</li>
+								<li class="normal">Scheduled posts</li>
+							</ul>
+						</li>
+						<li class="allOption">
+							<div class="clickButton sortCriteria">
+								<span>All authors</span>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<ul id="authors" class="detailOption clickTarget">
+								<li class="selected"><input type="text" name="" placeholder="Search authors" autofocus></li>
+								<li class="normal">All authors</li>
+								<li class="normal">Kenneth</li>
+								<li class="normal">Ghost</li>
+							</ul>
+						</li>
+						<li class="allOption">
+							<div class="clickButton sortCriteria">
+								<span>All tags</span>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<ul id="tags" class="detailOption clickTarget">
+								<li class="selected"><input type="text" name="" placeholder="Search tags" autofocus></li>
+								<li class="normal">All tags</li>
+								
+							</ul>
+						</li>
+					</ul>
+					<div id="timeOption" class="time">
+						<div class="clickButton sortCriteria">
+							<span>Sort by: </span>
+							<span>Newest</span>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<ul id="time" class="detailOption clickTarget">
+							<li class="selected">Newest</li>
+							<li class="normal">Oldest</li>
+						</ul>
+					</div>
+				</div>
+				<ul id="stories">
+					<li class="story">
+						<h3><a href="">Tips on visiting South Asia</a></h3>
+						<p>These tips on visiting South Asia wil help any traveler stay safe. South Asia is...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">90 Days Of Sweat, Grind and Hustle In New Hustle City</a></h3>
+						<p>New York is shit. New York is paradise. New York is a place I know all too well;...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">Volunteer in Cambodia! Review of IVHQ Program</a></h3>
+						<p>After I had come back from my volunteer trip from Thailand ( if you haven’t read...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">The Ultimate Dalat City Guide</a></h3>
+						<p>Dalat is my favorite city in Vietnam. The weather, the attraction, and the peopl...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">The Ultimate Mui Ne Guide</a></h3>
+						<p>The formerly little-inhabited beach south of the fishing village of Mui Ne prope...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">20 Photos that Make You Want to Visit HAVANA</a></h3>
+						<p>Before I went to Havana, I had many mixed comments regarding my trip. Some said,...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">Volunteer in Thailand! Review of IVHQ Program</a></h3>
+						<p>I have decided to go on a volunteer trip to Thailand for a while. I know that I ...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">4 Jobs I’ve done on Australia Working Holiday</a></h3>
+						<p>Working holiday has been a trending topic for a long time now, an opportunity fo...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">HOW TO SPEND 2 WEEKS IN EUROPE – ITINERARY IDEAS FOR FIRST TIME VISITORS</a></h3>
+						<p>Getting ready for that big two-week trip to Europe? 14 days may sound like a lon...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">The Ultimate Koh Ta Kiev Travel Guide</a></h3>
+						<p>(This is a map of the island, everything I referred to in the article can be fou...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+					<li class="story">
+						<h3><a href="">14 Reasons Why You’ll Love Vietnam and Should go NOW</a></h3>
+						<p>To be honest, Vietnam was never really on my travel list. I know it’s close to T...</p>
+						<div class="notes">
+							<span>Published by </span>
+							<span class="authorName">kenneth </span>
+							<span>— </span>
+							<span class="publishDate">02 Aug 2018</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<script type="text/javascript" src="./libs/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/adminIndex.js"></script>
+</body>
+</html>
