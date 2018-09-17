@@ -19,6 +19,7 @@ $(document).ready(function(){
 	}
 	clickFunction();
 	
+// 导航显示/隐藏
 	$('#navShowButton').click(function(){
 		var navOneMarginLeft=$('#navOne').css('marginLeft');
 		if (navOneMarginLeft == '0px') {
@@ -28,7 +29,7 @@ $(document).ready(function(){
 			$('#navShowButton').animate({
 				marginLeft:'-23rem'
 			},200)
-			$('#testArea').animate({
+			$('#loadArea').animate({
 				paddingLeft:'0'
 			},200)
 		}
@@ -39,34 +40,36 @@ $(document).ready(function(){
 			$('#navShowButton').animate({
 				marginLeft:'0'
 			},200)
-			$('#testArea').animate({
+			$('#loadArea').animate({
 				paddingLeft:'24rem'
 			},200)
 		}
 	})
-	/*
 	$('#navOne').mouseover(function(){
-		var navOneMarginLeft=$('#navOne').css('marginLeft');
-		if (navOneMarginLeft != 0) {
+		var mainLeft=$('#loadArea').css('paddingLeft');
+		console.log(mainLeft);
+		if (mainLeft == '0px') {
 			$('#navOne').animate({
 				marginLeft:'0'
-			},200)
+			},100)
 			$('#navShowButton').animate({
 				marginLeft:'0'
-			},200)
+			},100)
 		}
 	})
 	$('#navOne').mouseleave(function(){
-		var navOneMarginLeft=$('#navOne').css('marginLeft');
-		if (navOneMarginLeft == '0px') {
+		var mainLeft=$('#loadArea').css('paddingLeft');
+		if (mainLeft == '0px') {
 			$('#navOne').animate({
 				marginLeft:'-23rem'
-			},200)
+			},100)
 			$('#navShowButton').animate({
 				marginLeft:'-23rem'
-			},200)
+			},100)
 		}
-	})*/
+	})
+
+//页面部分重载
 	var navClickFunction = function(){
 		$(this).siblings('.selected').addClass('normal');
 		$(this).siblings('.selected').removeClass('selected');
@@ -82,7 +85,7 @@ $(document).ready(function(){
 		$('.option').children('.selected').removeClass('selected');
 		$('#newStory').removeClass('normal');
 		$('#newStory').addClass('selected');
-		$('#testArea').load('./test.html')
+		$('#loadArea').load('./newStory.html')
 
 	})
 
@@ -92,7 +95,7 @@ $(document).ready(function(){
 	$('#newStory2').click(function(){
 		$('#loadArea').load('./newStory.html')
 	})
-
+//搜索框功能
 	function getSearchResult() {
 		var data = {
 			code:1,
@@ -104,7 +107,6 @@ $(document).ready(function(){
 			}
 			return data;
 		}
-
 	$('#searchKeyWords').bind("input propertychange",function(event){
 		$('#searchBox').css({
 			'border':'1px solid #b1b1b1'
@@ -115,10 +117,44 @@ $(document).ready(function(){
 		$('#searchResult').css({
 			'display':"block"
 		})	
-		
 		var searchRuslt=getSearchResult().data;
 		var html = '<div id="resultHeader"><div id="category">Stories</div><hr></div>';
 		var searchWords=$(this).val();
+		if (searchWords) {
+			for (var i = 0; i < searchRuslt.length; i++) {
+				var matchRule = new RegExp(searchWords, 'gi');
+				var matchResult = searchRuslt[i].match(matchRule);
+				var splitResult = searchRuslt[i].split(matchRule);
+				html += '<li>';
+				for (var a = 0; a < splitResult.length; a++) {
+					if (!matchResult[a]) {
+						html += splitResult[a] ;
+					}
+					else{
+						html += splitResult[a] + '<span class="yellow">' + matchResult[a]  + '</span>';
+					}	
+				}
+				html += '</li>';
+			}
+		}
+		$('#results').html(html)
+	})
+	$('#searchKeyWords').blur(function(){
+		$('#searchResult').css({
+			'display':"none"
+		})
+		$('#inputBox').css({
+			'border-color':'#dfe1e3'
+		})
+		$('#searchBox').css({
+			'border':'0'
+		})
+	})
+	$('#searchResult li').mouseover(function(){
+		$('#searchResult .hover').removeClass('hover');
+		$(this).addClass('hover')
+	})
+		/*
 		if (searchWords) {
 			for (var i = 0; i < searchRuslt.length; i++) {
 				var matchRule=new RegExp(searchWords, 'gi');
@@ -142,28 +178,10 @@ $(document).ready(function(){
 				html += '<li>' + liContent + '</li>';
 			}
 
-		}
-		$('#results').html(html)
-
-	})
-
-	$('#searchKeyWords').blur(function(){
-		$('#searchResult').css({
-			'display':"none"
-		})
-		$('#inputBox').css({
-			'border-color':'#dfe1e3'
-		})
-		$('#searchBox').css({
-			'border':'0'
-		})
-	})
+		}*/
 
 
-	$('#searchResult li').mouseover(function(){
-		$('#searchResult .hover').removeClass('hover');
-		$(this).addClass('hover')
-	})
+	
 
 	
 

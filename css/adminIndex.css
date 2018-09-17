@@ -68,7 +68,7 @@ body{
 	position: absolute;
 	top: 7rem;
 	left: 10rem;
-	z-index: 99;
+	z-index: 9999;
 	color: #60757e;
 	padding: 0.83rem;
 	display: none;
@@ -147,7 +147,7 @@ body{
 #searchBox{
 	position: fixed;
 	margin: 0 2rem;
-	padding-bottom: 0.67rem;
+	
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
@@ -179,9 +179,11 @@ input::-webkit-input-placeholder{
 	cursor: pointer;
 }
 #searchResult{
+	padding-top: 0.67rem;
 	width: 100%;
 	top: 2.5rem;
 	color: #738a94;
+	display: none;
 }
 #resultHeader{
 	display: flex;
@@ -417,6 +419,9 @@ input::-webkit-input-placeholder{
 	color: #343f44;
 	font-size: 1.1rem;
 }
+#publishSettingButton{
+	display: none;
+}
 #articleType{
 	position: fixed;
 	left: 24rem;
@@ -428,6 +433,7 @@ input::-webkit-input-placeholder{
 	right: 0;
 	display: flex;
 	z-index: 99;
+
 }
 .fa-cogs{
 	position: fixed;
@@ -600,6 +606,7 @@ input[type="date"], input[type="time"]{
 	padding: 2rem;
 	z-index: 999;
 	overflow-y: scroll;
+	display: none;
 }
 #postSettings header span{
 	font-size: 1.33rem;
