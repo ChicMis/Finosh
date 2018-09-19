@@ -47,7 +47,6 @@ $(document).ready(function(){
 	})
 	$('#navOne').mouseover(function(){
 		var mainLeft=$('#loadArea').css('paddingLeft');
-		console.log(mainLeft);
 		if (mainLeft == '0px') {
 			$('#navOne').animate({
 				marginLeft:'0'
@@ -179,9 +178,19 @@ $(document).ready(function(){
 			}
 
 		}*/
-
-
-	
+		
+//newStory JS
+	$(document).on('click','#settingIcon', function(){
+		$('#postSettings').css({
+			'marginRight':'0'})
+		}
+	)
+	$(document).on('click','#postSettings header i', function(){
+		$('#postSettings').css({
+			'marginRight':'-29rem'
+			})
+		}
+	)
 
 	
 

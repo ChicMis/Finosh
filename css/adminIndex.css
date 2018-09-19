@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+i{
+	cursor: pointer;
+}
 a{
 	text-decoration: none;
 }
@@ -436,6 +439,7 @@ input::-webkit-input-placeholder{
 
 }
 .fa-cogs{
+	margin-right: 2rem;
 	position: fixed;
 	opacity: 0.6;
 	cursor: pointer;
@@ -568,6 +572,9 @@ input[type="date"], input[type="time"]{
 	border-radius: 4px;
 	cursor: pointer;
 }
+#settingIcon{
+
+}
 #editArea{
 	display: flex;
 	justify-content: center;
@@ -602,11 +609,11 @@ input[type="date"], input[type="time"]{
 	bottom: 0;
 	right: 0;
 	width: 25rem;
+	margin-right: 0;
 	background-color: #f4f8fb;
 	padding: 2rem;
 	z-index: 999;
 	overflow-y: scroll;
-	display: none;
 }
 #postSettings header span{
 	font-size: 1.33rem;
