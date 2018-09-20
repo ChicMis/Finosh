@@ -276,7 +276,6 @@ input::-webkit-input-placeholder{
 	padding-left: 24rem;
 }
 #indexMain{
-	
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -968,7 +967,7 @@ h2 svg{
 	opacity: 0;
 	cursor: pointer;
 }
-#headUpload, #CSVUpload, #addSubscriber,{
+#headUpload, #CSVUpload, #addSubscriber{
 	position: fixed;
 	top: 0;
 	height: 100%;
@@ -978,7 +977,7 @@ h2 svg{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	visibility: hidden;
+	visibility: visible;
 }
 #headUpload{}
 #CSVUpload{}
@@ -1624,6 +1623,24 @@ h2 svg{
 .ghostLogo svg{
 	height: 3.25rem;
 	width: 10rem;
+}
+
+
+
+
+#signInPageMain{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#accountInfor{
+	padding: 2.5rem;
+	border: 1px solid #dae1e3;
+	color: #738a94;
+	border-radius: 5px;
 }
 
 @media screen and (max-width: 840px){

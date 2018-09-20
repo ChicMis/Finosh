@@ -88,11 +88,17 @@ $(document).ready(function(){
 
 	})
 
-	$('#newStory').click(function(){
+	$('#newStoryPage').click(function(){
 		$('#loadArea').load('./newStory.html')
 	})
 	$('#newStory2').click(function(){
 		$('#loadArea').load('./newStory.html')
+	})
+	$('#storyPage').click(function(){
+		$('#loadArea').load('./admin.html')
+	})
+	$('#team').click(function(){
+		$('#loadArea').load('./team.html')
 	})
 //搜索框功能
 	function getSearchResult() {
