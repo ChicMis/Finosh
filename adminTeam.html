@@ -8,19 +8,26 @@
 	<link rel="stylesheet" type="text/css" href="./css/adminIndex.css">
 </head>
 <body>
+	<div id="invitePeople">
+		<div id="newUserInfor">
+			<p class="header">Invite a New User</p>
+		</div>
+	</div>
 	<nav id="navOne">
 		<header>
-			<div id="person">
-				<div id="personImg">
-					<a href=""><img src="./img/world.png"></a>
+			<div id="personBox"  class="clickButton">
+				<div id="person">
+					<div id="personImg">
+						<img src="./img/world.png">
+					</div>
+					<div id="personInfor">
+						<div id="webName">traveler tale</div>
+						<div id="personName">Melony</div>
+					</div>
 				</div>
-				<div id="personInfor">
-					<div id="webName"><a href="">traveler tale</a></div>
-					<div id="personName"><a href="">Melony</a></div>
+				<div id="moreAbout">
+					<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535779705855" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1914" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><defs><style type="text/css"></style></defs><path d="M512 689.2c-7.2 0-14.3-2.7-19.8-8.2l-224-224c-10.9-10.9-10.9-28.7 0-39.6s28.7-10.9 39.6 0L512 621.6l204.2-204.2c10.9-10.9 28.7-10.9 39.6 0 10.9 10.9 10.9 28.7 0 39.6l-224 224c-5.5 5.5-12.6 8.2-19.8 8.2z" p-id="1915" fill="#bbbbbb"></path></svg>
 				</div>
-			</div>
-			<div id="moreAbout" class="clickButton">
-				<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535779705855" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1914" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><defs><style type="text/css"></style></defs><path d="M512 689.2c-7.2 0-14.3-2.7-19.8-8.2l-224-224c-10.9-10.9-10.9-28.7 0-39.6s28.7-10.9 39.6 0L512 621.6l204.2-204.2c10.9-10.9 28.7-10.9 39.6 0 10.9 10.9 10.9 28.7 0 39.6l-224 224c-5.5 5.5-12.6 8.2-19.8 8.2z" p-id="1915" fill="#bbbbbb"></path></svg>
 			</div>
 			<div id="moreInfor" class="clickTarget">
 				<ul>
@@ -53,10 +60,18 @@
 				</ul>
 			</div>
 		</header>
-		<aside>
-			<input type="text" name="" placeholder="Search">
-			<div id="searchLogo">
-				<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535780932289" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2723" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"><defs><style type="text/css"></style></defs><path d="M625.81640288 37.76498797c-199.06014629 0-360.41860914 161.35846283-360.41860914 360.41860915 0 83.34680336 28.33554196 160.05431657 75.75904318 221.11207435L40.49183929 919.9606691c-3.67532134 3.67532134-3.67532134 9.72181774 0 13.39713908l50.15035253 50.15035253c3.67532134 3.67532134 9.72181774 3.67532134 13.39713908 0l300.66499763-300.66499763C465.76208633 730.26666429 542.46959952 758.60220626 625.81640288 758.60220626c199.06014629 0 360.41860914-161.35846283 360.41860915-360.41860914S824.87654918 37.76498797 625.81640288 37.76498797z m191.11670985 551.53531899C765.95284894 640.3991295 698.01868346 668.49755395 625.81640288 668.49755395s-140.13644605-28.09842446-191.11670984-79.19724699C383.6008705 538.32004317 355.50244605 470.3858777 355.50244605 398.18359712s28.09842446-140.13644605 79.19724699-191.11670985c50.9802638-51.09882254 118.91442927-79.19724701 191.11670984-79.19724701s140.13644605 28.09842446 191.11670985 79.19724701c51.09882254 50.9802638 79.19724701 118.91442927 79.19724701 191.11670985s-28.09842446 140.13644605-79.19724701 191.11670984z" p-id="2724" fill="#bfbfbf"></path></svg>
+		<aside id="searchBox">
+			<div id="inputBox">
+				<input type="text" name="" placeholder="Search" id="searchKeyWords">
+				<div id="searchLogo">
+					<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1535780932289" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2723" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"><defs><style type="text/css"></style></defs><path d="M625.81640288 37.76498797c-199.06014629 0-360.41860914 161.35846283-360.41860914 360.41860915 0 83.34680336 28.33554196 160.05431657 75.75904318 221.11207435L40.49183929 919.9606691c-3.67532134 3.67532134-3.67532134 9.72181774 0 13.39713908l50.15035253 50.15035253c3.67532134 3.67532134 9.72181774 3.67532134 13.39713908 0l300.66499763-300.66499763C465.76208633 730.26666429 542.46959952 758.60220626 625.81640288 758.60220626c199.06014629 0 360.41860914-161.35846283 360.41860915-360.41860914S824.87654918 37.76498797 625.81640288 37.76498797z m191.11670985 551.53531899C765.95284894 640.3991295 698.01868346 668.49755395 625.81640288 668.49755395s-140.13644605-28.09842446-191.11670984-79.19724699C383.6008705 538.32004317 355.50244605 470.3858777 355.50244605 398.18359712s28.09842446-140.13644605 79.19724699-191.11670985c50.9802638-51.09882254 118.91442927-79.19724701 191.11670984-79.19724701s140.13644605 28.09842446 191.11670985 79.19724701c51.09882254 50.9802638 79.19724701 118.91442927 79.19724701 191.11670985s-28.09842446 140.13644605-79.19724701 191.11670984z" p-id="2724" fill="#bfbfbf"></path></svg>
+				</div>
+			</div>
+			<div id="searchResult">
+				<div id="tipWords">no result found</div>
+				<ul id="results">
+					
+				</ul>
 			</div>
 		</aside>
 		<section>
@@ -176,5 +191,6 @@
 	</div>
 	<script type="text/javascript" src="./libs/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/adminIndex.js"></script>
+	
 </body>
 </html>
